@@ -1,7 +1,8 @@
 # Lab 02 — Quét bài toán và chọn cơ hội
 
 **Bài làm cá nhân — Phase 1 và Phase 2**  
-**Nhánh cá nhân:** `trananh1205`
+**Học viên:** TranAnhTu - 03368  
+**Nhánh cá nhân:** `TranAnhTu-03368`
 
 ## Phase 1 — SCAN: Năm ý tưởng cá nhân
 
