@@ -2,7 +2,7 @@
 
 **Bài làm cá nhân — Phase 1 và Phase 2**  
 **Học viên:** TranAnhTu - 03368  
-**Nhánh cá nhân:** `TranAnhTu-03368`
+**Nhánh cá nhân:** `TranAnhTu_03368`
 
 ## Phase 1 — SCAN: Năm ý tưởng cá nhân
 
