@@ -22,6 +22,7 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 
 ## 🃏 QUICK PROBLEM CARD #2 — Vinhomes
 
+```
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #2                                       │
 │                                                             │
@@ -42,7 +43,7 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 │   → 5. Gửi lại cư dân & đóng ticket                         │
 │                                                             │
 │ Bước nào tốn thời gian/lỗi nhất? Bước 2-4 (⏱ ~12 phút/lượt, │
-│ thời gian phản hồi thực tế tới ~12 giờ) 🔴                   │
+│ thời gian phản hồi thực tế tới ~12 giờ) 🔴                  │
 │ AI có thể nhảy vào hỗ trợ ở bước nào? Bước 2-3              │
 │ (phân loại + route tự động) và draft phản hồi ở bước 4.     │
 │                                                             │
@@ -51,13 +52,14 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 │   - Phân loại đúng >90% ticket dưới 5 giây.                 │
 │   - Giảm 40% khối lượng xử lý thủ công của tổng đài.        │
 │                                                             │
-│ Quick Architecture: [x] LLM Feature (classify + route +      │
-│ draft), Rule-based router làm fallback. HITL bắt buộc duyệt. │
+│ Quick Architecture: [x] LLM Feature (classify + route +     │
+│ draft), Rule-based router làm fallback. HITL bắt buộc duyệt.│
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ## 🃏 QUICK PROBLEM CARD #3 — Vinmec
 
+```
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #3                                       │
 │                                                             │
@@ -87,19 +89,20 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 │   - 100% tóm tắt phải có bác sĩ duyệt (HITL).               │
 │   - Tăng tỉ lệ sử dụng thiết bị y tế thêm 15%.              │
 │                                                             │
-│ Quick Architecture: [x] LLM Feature + RAG trên bệnh án,      │
+│ Quick Architecture: [x] LLM Feature + RAG trên bệnh án,     │
 │ HITL bắt buộc. CẤM chẩn đoán/kê đơn, chỉ tóm tắt.           │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ## 🃏 QUICK PROBLEM CARD #5 — Vinschool
 
+```
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #5                                       │
 │                                                             │
-│ Bài toán (1 câu): AI draft nhận xét & gợi ý điểm bài tự luận │
-│ theo rubric, đồng thời phân tích lỗi để giáo viên phát hiện  │
-│ sớm học sinh gặp khó khăn.                                   │
+│ Bài toán (1 câu): AI draft nhận xét & gợi ý điểm bài tự luận│
+│ theo rubric, đồng thời phân tích lỗi để giáo viên phát hiện │
+│ sớm học sinh gặp khó khăn.                                  │
 │ Công ty thành viên: [x] Vinschool                           │
 │                                                             │
 │ Ai đang đau (Actor)? Giáo viên (quá tải chấm bài & hành     │
@@ -122,7 +125,7 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 │   - 100% điểm cuối do giáo viên duyệt (HITL).               │
 │   - ≥85% nhận xét do AI draft được giáo viên dùng/chỉnh nhẹ.│
 │                                                             │
-│ Quick Architecture: [x] LLM Feature + rubric-based scoring,  │
+│ Quick Architecture: [x] LLM Feature + rubric-based scoring, │
 │ HITL bắt buộc. CẤM tự công bố điểm, không thay giáo viên.   │
 └─────────────────────────────────────────────────────────────┘
 ```

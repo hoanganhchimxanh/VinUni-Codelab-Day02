@@ -4,6 +4,7 @@
 
 Quy trình chấm bài tự luận hiện tại của giáo viên Vinschool (tính theo **1 lớp ~40 bài**):
 
+```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
 │ Bước 1       │     │ Bước 2       │     │ Bước 3       │
 │ Thu bài tự   │ ──→ │ Đọc & chấm   │ ──→ │ Nhập điểm    │
@@ -60,6 +61,7 @@ Quy trình chấm bài tự luận hiện tại của giáo viên Vinschool (tí
 
 ### Future-State Flow
 
+```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
 │ Bước 1       │     │ Bước 2       │     │ Bước 3       │
 │ Thu bài tự   │     │ 🔵 AI đọc bài│     │ 🔵 AI draft  │
