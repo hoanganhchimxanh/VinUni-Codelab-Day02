@@ -9,7 +9,7 @@
 │ Booking, TripAdvisor, email, tin nhắn) để    │
 │ lấy review/phản ánh mới.                     │
 │                                              │
-│ ⏱ ~0,5 phút                                  │
+│ ⏱ ~5 phút                                   │
 └──────────────────────┬───────────────────────┘
                        │
                        ▼
@@ -19,7 +19,7 @@
 │ (Phòng, ăn uống, dịch vụ...) - đọc từng      │
 │ nội dung, nhiều văn phong, nhiều ngôn ngữ.   │
 │                                              │
-│ ⏱ ~1,5 phút                                  │
+│ ⏱ ~15 phút                                  │
 └──────────────────────┬───────────────────────┘
                        │
                        ▼
@@ -29,7 +29,7 @@
 │                                              │
 │ Dựa vào cảm tính, dễ bỏ sót ca nghiêm trọng. │
 │                                              │
-│ ⏱ ~1 phút                                    │
+│ ⏱ ~2 phút                                    │
 └──────────────────────┬───────────────────────┘
                        │
                        ▼
@@ -39,7 +39,7 @@
 │ Viết thủ công, phải phù hợp từng kênh và     │
 │ văn phong.                                   │
 │                                              │
-│ ⏱ ~2 phút                                    │
+│ ⏱ ~5 phút                                    │
 └──────────────────────┬───────────────────────┘
                        │
                        ▼
@@ -50,7 +50,7 @@
 │ đến bộ phận liên quan (buồng phòng, F&B,     │
 │ an ninh...).                                 │
 │                                              │
-│ ⏱ ~0 phút (đã tính vào bước 4a)             │
+│ ⏱ ~5 phút            │
 └──────────────────────┬───────────────────────┘
                        │
                        ▼
@@ -67,10 +67,10 @@ Bài toán được chọn: 3. Nhân viên đọc review, email, tin nhắn đa 
 | Field | Nội dung |
 |---|---|
 | **1. Actor / Operator** | Nhân viên CSKH và quản lý trải nghiệm khách hàng tại các cơ sở Vinpearl (resort, khách sạn, khu vui chơi). Khách hàng đang chờ phản hồi chịu ảnh hưởng gián tiếp. |
-| **2. Current Workflow** | Khi có review, email hoặc tin nhắn mới, nhân viên mở từng kênh riêng lẻ (Google, Booking, TripAdvisor, email, tin nhắn) để thu thập, đọc và xác định chủ đề (phòng, ăn uống, dịch vụ), đánh giá cảm xúc và mức độ nghiêm trọng, rồi soạn phản hồi và gửi hoặc chuyển bộ phận liên quan. 4 bước, hoàn toàn thủ công, mất ~5 phút/lượt. |
-| **3. Bottleneck** | Bước 2-4 (mất ~5 phút): đọc, phân loại chủ đề/cảm xúc/mức độ nghiêm trọng và soạn phản hồi phù hợp với từng kênh và văn phong. Ca nghiêm trọng (an toàn, vệ sinh, thái độ nhân viên) dễ bị chìm trong khối lượng lớn nên phát hiện và xử lý chậm. |
-| **4. Business Impact** | Khoảng 10.000 lượt/tháng (giả định). Gây lãng phí ~830 giờ công/tháng của đội CSKH. Phản hồi chậm làm giảm điểm đánh giá trên các nền tảng, ca nghiêm trọng xử lý trễ có nguy cơ thành khủng hoảng truyền thông, chất lượng phản hồi không đồng đều giữa các cơ sở. |
-| **5. Success Metric** | 1. Giảm thời gian xử lý từ 5 phút xuống dưới 2 phút/lượt, tiết kiệm ~500 giờ/tháng (Efficiency).<br>2. Ca nghiêm trọng được cảnh báo trong dưới 1 giờ (SLA).<br>3. Tỉ lệ bản nháp được duyệt gần như không cần sửa đạt ≥ 70% (Quality). |
+| **2. Current Workflow** | Khi có review, email hoặc tin nhắn mới, nhân viên mở từng kênh riêng lẻ (Google, Booking, TripAdvisor, email, tin nhắn) để thu thập (~5 phút), đọc và xác định chủ đề (phòng, ăn uống, dịch vụ) (~15 phút), đánh giá cảm xúc và mức độ nghiêm trọng (~2 phút), rồi soạn phản hồi (~5 phút) và gửi hoặc chuyển bộ phận liên quan (~5 phút). 5 bước, hoàn toàn thủ công, mất ~32 phút/lượt. |
+| **3. Bottleneck** | Bước 2–4 (mất ~22 phút/lượt): đọc và xác định chủ đề chiếm nhiều thời gian nhất (~15 phút) do phải xử lý nhiều văn phong và ngôn ngữ; tiếp theo là soạn phản hồi thủ công phù hợp từng kênh (~5 phút) và đánh giá cảm xúc/mức độ nghiêm trọng dựa vào cảm tính (~2 phút). Ca nghiêm trọng (an toàn, vệ sinh, thái độ nhân viên) dễ bị chìm trong khối lượng lớn nên phát hiện và xử lý chậm. |
+| **4. Business Impact** | Khoảng 10.000 lượt/tháng (giả định). Với ~32 phút/lượt, gây lãng phí ~5.333 giờ công/tháng của đội CSKH. Phản hồi chậm làm giảm điểm đánh giá trên các nền tảng, ca nghiêm trọng xử lý trễ có nguy cơ thành khủng hoảng truyền thông, chất lượng phản hồi không đồng đều giữa các cơ sở. |
+| **5. Success Metric** | 1. Giảm thời gian xử lý từ ~32 phút xuống dưới 10 phút/lượt (AI xử lý bước 2–4a, người chỉ duyệt), tiết kiệm ~3.667 giờ/tháng (Efficiency).<br>2. Ca nghiêm trọng được cảnh báo trong dưới 1 giờ (SLA).<br>3. Tỉ lệ bản nháp được duyệt gần như không cần sửa đạt ≥ 70% (Quality). |
 | **6. Operational Boundary** | AI được phép phân loại chủ đề, đánh giá cảm xúc và mức độ nghiêm trọng, cảnh báo ca nghiêm trọng, gợi ý bộ phận cần chuyển và soạn nháp phản hồi (draft). **CẤM:** AI không được tự động gửi phản hồi cho khách mà không có người phê duyệt (Bắt buộc HITL); không được hứa hẹn bồi thường, hoàn tiền, giảm giá hoặc nhận lỗi thay công ty; không được tiết lộ thông tin cá nhân của khách hay nhân viên. Ca nghiêm trọng hoặc độ tin cậy thấp bắt buộc chuyển cho quản lý xử lý. |
 
 
