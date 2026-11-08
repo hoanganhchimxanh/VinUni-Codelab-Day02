@@ -1,0 +1,9 @@
+{
+  "run_at_utc": "2026-11-07T19:38:38.373342+00:00",
+  "mode": "live_gemini",
+  "model": "gemini-3.8-flash",
+  "data_source": "synthetic lab fixtures; no live station integration",
+  "status": "in_progress",
+  "tests": [],
+  "concurrent_requests": 4
+}

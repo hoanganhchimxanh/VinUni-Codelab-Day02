@@ -1,0 +1,36 @@
+{
+  "run_at_utc": "2026-11-07T19:45:09.386919+00:00",
+  "model": "gemini-3.8-flash",
+  "checks": [
+    {
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "starter-code",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.254,
+      "stdout": "",
+      "stderr": "test_all_adversarial_fixtures_have_explicit_independent_expectations (test_prompt_prototype.BoundaryContractTests.test_all_adversarial_fixtures_have_explicit_independent_expectations) ... ok\ntest_critical_battery_accepts_dispatch_with_no_station (test_prompt_prototype.BoundaryContractTests.test_critical_battery_accepts_dispatch_with_no_station) ... ok\ntest_dispatch_cannot_smuggle_station_or_reason_instructions (test_prompt_prototype.BoundaryContractTests.test_dispatch_cannot_smuggle_station_or_reason_instructions) ... ok\ntest_dispatch_word_does_not_hide_dangerous_station_advice (test_prompt_prototype.BoundaryContractTests.test_dispatch_word_does_not_hide_dangerous_station_advice) ... ok\ntest_duplicate_json_keys_and_nonstandard_constants_are_rejected (test_prompt_prototype.BoundaryContractTests.test_duplicate_json_keys_and_nonstandard_constants_are_rejected) ... ok\ntest_duplicate_station_ids_need_review (test_prompt_prototype.BoundaryContractTests.test_duplicate_station_ids_need_review) ... ok\ntest_exactly_five_percent_can_use_verified_station_beyond_five_km (test_prompt_prototype.BoundaryContractTests.test_exactly_five_percent_can_use_verified_station_beyond_five_km) ... ok\ntest_extra_fields_are_rejected (test_prompt_prototype.BoundaryContractTests.test_extra_fields_are_rejected) ... ok\ntest_fabricated_station_is_rejected (test_prompt_prototype.BoundaryContractTests.test_fabricated_station_is_rejected) ... ok\ntest_false_or_string_human_approval_is_rejected (test_prompt_prototype.BoundaryContractTests.test_false_or_string_human_approval_is_rejected) ... ok\ntest_json_array_and_extra_prose_are_rejected (test_prompt_prototype.BoundaryContractTests.test_json_array_and_extra_prose_are_rejected) ... ok\ntest_just_below_five_requires_dispatch_even_with_nearby_station (test_prompt_prototype.BoundaryContractTests.test_just_below_five_requires_dispatch_even_with_nearby_station) ... ok\ntest_missing_space_after_tag_is_rejected (test_prompt_prototype.BoundaryContractTests.test_missing_space_after_tag_is_rejected) ... ok\ntest_missing_tag_is_rejected (test_prompt_prototype.BoundaryContractTests.test_missing_tag_is_rejected) ... ok\ntest_nearest_eligible_station_wins_with_id_tiebreak (test_prompt_prototype.BoundaryContractTests.test_nearest_eligible_station_wins_with_id_tiebreak) ... ok\ntest_out_of_range_negative_or_boolean_distance_is_ineligible (test_prompt_prototype.BoundaryContractTests.test_out_of_range_negative_or_boolean_distance_is_ineligible) ... ok\ntest_tag_in_middle_or_after_whitespace_is_rejected (test_prompt_prototype.BoundaryContractTests.test_tag_in_middle_or_after_whitespace_is_rejected) ... ok\ntest_unknown_or_invalid_battery_and_range_need_review (test_prompt_prototype.BoundaryContractTests.test_unknown_or_invalid_battery_and_range_need_review) ... ok\ntest_unverified_incompatible_or_full_station_is_ineligible (test_prompt_prototype.BoundaryContractTests.test_unverified_incompatible_or_full_station_is_ineligible) ... ok\ntest_valid_station_proposal (test_prompt_prototype.BoundaryContractTests.test_valid_station_proposal) ... ok\ntest_existing_environment_takes_priority_and_missing_file_is_allowed (test_prompt_prototype.EnvironmentTests.test_existing_environment_takes_priority_and_missing_file_is_allowed) ... ok\ntest_only_key_fields_are_loaded_with_quotes_comments_and_bom (test_prompt_prototype.EnvironmentTests.test_only_key_fields_are_loaded_with_quotes_comments_and_bom) ... ok\ntest_concurrent_runner_keeps_all_raw_outputs_and_original_case_order (test_prompt_prototype.RunnerTests.test_concurrent_runner_keeps_all_raw_outputs_and_original_case_order) ... ok\ntest_runner_distinguishes_api_error_from_unsafe_output_and_exits_nonzero (test_prompt_prototype.RunnerTests.test_runner_distinguishes_api_error_from_unsafe_output_and_exits_nonzero) ... ok\n\n----------------------------------------------------------------------\nRan 24 tests in 0.054s\n\nOK\n"
+    },
+    {
+      "command": [
+        "autograder/autograder.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 30.178,
+      "stdout": "[SETUP] Bat dau cham diem Group Assignment tren GitHub Classroom\n============================================================\n[SECTION A] Kiem tra su ton tai cua 4 file deliverables (Max: 5.0d)\n\n[SECTION B] Cham diem ma nguon Prompt Prototype (Max: 5.0d)\n\n============================================================\n[REPORT] KET QUA CHAM DIEM TONG HOP CHO CA NHOM:\n[PASS] File ton tai: 01-problem-scan.md (Scan & Quick Cards) tai '.\\01-problem-scan.md' (+1.25d)\n[PASS] File ton tai: 02-deep-dive-report.md (Deep-Dive Report) tai '.\\02-deep-dive-report.md' (+1.25d)\n[PASS] File ton tai: 03-ai-log.md (AI Log & Reflection) tai '.\\03-ai-log.md' (+1.25d)\n[PASS] File ton tai: 04-workflow-diagram (.png/.jpg/.pdf) tai '.\\04-workflow-diagram.png' (+1.25d)\n[PASS] Code - Tieu chi 1: SYSTEM_PROMPT hop le va co chi thi ranh gioi. (+1.0d)\n[PASS] Code - Tieu chi 2: Ham evaluate_prompt() su dung Gemini SDK chinh xac. (+1.0d)\n[PASS] Code - Tieu chi 3: Da khai bao it nhat 2 Adversarial test cases hop le. (+1.0d)\n[FAIL] Code - Tieu chi 4: Script bi timeout (>30s). (0.0/1.0d)\n[FAIL] Code - Tieu chi 5: Khong the check assertion vi script khong chay duoc. (0.0/1.0d)\n============================================================\n[SCORE] TONG DIEM NHOM: 8.00 / 10.00\n[WARNING] Co file bi thieu hoac kiem thu code khong dat. Vui loi kiem tra lai log.\n",
+      "stderr": "",
+      "live_report": "evidence/05-test-results-gemini-3.8-autograder-final.json"
+    }
+  ],
+  "direct_live_run": {
+    "exit_code": 0,
+    "report": "05-test-results.json",
+    "passed_count": 4,
+    "elapsed_seconds": 33.302
+  }
+}
