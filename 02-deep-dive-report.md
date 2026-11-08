@@ -109,4 +109,3 @@ Quy trình chấm bài tự luận hiện tại của giáo viên Vinschool (tí
 
 **Justification (Lý giải quyết định dựa trên bằng chứng kỹ thuật và chi phí):**
 > Chọn **GO** với scope hẹp (1 lớp, 1 rubric) vì: (1) Phase 4 đã kiểm chứng ranh giới an toàn — 3/3 test tấn công đều thất bại trước system prompt, output luôn có `[DRAFT_ONLY]`, AI từ chối chốt điểm, từ chối bỏ rubric và từ chối so sánh/xếp hạng học sinh; (2) rủi ro được kiểm soát bằng HITL bắt buộc (giáo viên chốt điểm cuối) và Fallback `NEEDS_MANUAL_REVIEW` khi thiếu dữ liệu/ngoài rubric; (3) giải pháp chỉ dùng **LLM Feature** với model free-tier (`gemini-3.8-flash`), chi phí thấp, không cần hạ tầng phức tạp. Điều kiện dừng: nếu pilot không đạt mục tiêu **< 3 phút/bài** hoặc **< 85% nhận xét draft được giáo viên chấp nhận**, sẽ dừng để xác lập baseline trước khi mở rộng.
-
