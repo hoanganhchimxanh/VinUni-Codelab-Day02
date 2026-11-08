@@ -22,7 +22,6 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 
 ## 🃏 QUICK PROBLEM CARD #2 — Vinhomes
 
-```text
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #2                                       │
 │                                                             │
@@ -59,7 +58,6 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 
 ## 🃏 QUICK PROBLEM CARD #3 — Vinmec
 
-```text
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #3                                       │
 │                                                             │
@@ -96,7 +94,6 @@ Chọn top 3 bài toán: **#2 (Vinhomes)**, **#3 (Vinmec)**, **#5 (Vinschool)**.
 
 ## 🃏 QUICK PROBLEM CARD #5 — Vinschool
 
-```text
 ┌─────────────────────────────────────────────────────────────┐
 │ QUICK PROBLEM CARD #5                                       │
 │                                                             │
